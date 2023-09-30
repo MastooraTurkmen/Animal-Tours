@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.header{
+    margin-top: 0;
+    padding: 3.5em 2em;
+    height: 550px;
+    background: linear-gradient(to right, rgba(255, 235, 205, 1), rgba(255, 139, 114, .9));
+}
+
+section{
+    padding: 3.5em 2em;
+}
+
+
+.img{
+    opacity: 0;
+    position: absolute;
+    
+}
+
+
+.header-para{
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 24.55px;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 43.65px;
+}
+
+.information{
+    margin: 0 auto;
+    margin-bottom: 5em;
+    width: 308px;
+}
+
+p{
+    font-size: 18px;
+}
+
+h2 p{
+    margin-top: 0;
+}
+
+.icons{
+    margin-bottom: -.5em;
+}
+
+@media screen and (min-width: 750px) {
+
+    .header{
+       flex-direction: column;
+       padding: 3em 4em;
+       padding-top: 1em;
+       height: 450px;
+    }
+
+    h1{
+        text-align: left;
+        line-height: 68px;
+        font-size: 50px;
+    }
+
+    .header-para{
+       margin: unset;
+       text-align: left;
+       margin-bottom: 2em;
+    }
+
+    .hours-img, .img{
+        width: 190px;
+        margin-left: 0;
+        margin-right: 0;
+        gap: 2em;
+    }
+    .images{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .img{
+        opacity: 1;
+        position: unset;
+    }
+
+    .frog{
+        margin-bottom: -5em;
+        margin-top: auto;
+    }
+
+    section{
+        display: flex;
+        flex-direction: row;
+        margin-top: 3em;
+        gap: 4em;
+        flex-wrap: wrap;
+        padding: 3em 4em;
+    }
+
+    .information{
+        flex: 1;
+        text-align: left;  
+    }
+
+    .fast-icon{
+        flex-basis: 100%;   
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    .header, section{
+        padding: 6em 8em;
+    }
+
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: unset;
+    }
+    .information{
+        flex: unset;
+    }
+
+    .fast-icon{
+        flex-basis: unset;   
+    }
+
+    .hours-img, .img{
+        width: 180px;
+        height: 160px;
+        gap: 4em;
+    }
+
+    .images{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 2em;
+    }
+
+    .dog, .frog{
+        margin-bottom: -8em;
+    }
+    
+}
